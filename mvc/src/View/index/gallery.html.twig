@@ -1,0 +1,166 @@
+{% extends "layout.html.twig" %}
+
+{% block content %}
+<section class="hero" style="background-image: url({{ asset('taverne/img/cover/cover.jpg') }});">
+	<div class="hero-bg-primary"></div>
+	<div class="container">
+		<div class="page-header">
+			<div class="page-title">Galleries</div>
+			<ol class="breadcrumb">
+				<li><a href="index.html">Home</a></li>
+				<li><a href="#">Page</a></li>
+				<li class="active">Gallery</li>
+			</ol>	
+		</div>
+	</div>
+</section>
+
+{#
+<section class="border-bottom-1 border-grey-300 padding-30">
+	<div class="container text-center">
+		<h2 class="font-size-22 font-weight-300">Choose from <span class="font-weight-500">12.000</span> available games</h2>
+	</div>
+</section>
+#}
+
+<section class="bg-grey-50 padding-xs-15">
+	<div class="container margin-bottom-30">
+		<ul class="filter">
+			<li><a href="#all" class="active">Tout</a></li>
+			<li><a href="#edition1">Edition 1</a></li>
+			<li><a href="#edition2">Edition 2</a></li>
+		</ul>
+	</div>
+	
+	<div class="container">
+		<div class="row masonry">
+			<div id="edition1" class="col-lg-3 col-md-4 col-sm-6 col-xs-12 masonry-item">
+				<figure class="img-hover">
+					<img src="{{ asset('taverne/img/gallery/1.jpg') }}" alt="">
+					<figcaption>
+						<h2>Ezio <span>Auditore</span></h2>
+						<p>Sadie never took her eyes.</p>
+						<a href="{{ asset('taverne/img/gallery/lg-1.jpg') }}" data-footer="Ezio Auditore" data-toggle="lightbox" data-gallery="multiimages"></a>
+					</figcaption>			
+				</figure>
+			</div>
+
+			<div id="edition2" class="col-lg-3 col-md-4 col-sm-6 col-xs-12 masonry-item">
+				<figure class="img-hover">
+					<img src="{{ asset('taverne/img/gallery/2.jpg') }}" alt="">
+					<figcaption>
+						<h2>Dead<span>Pool</span></h2>
+						<p>Sadie never took her eyes.</p>
+						<a href="{{ asset('taverne/img/gallery/lg-2.jpg') }}" data-footer="DeadPool" data-toggle="lightbox" data-gallery="multiimages"></a>
+					</figcaption>	
+				</figure>
+			</div>
+
+			<div id="edition1" class="col-lg-3 col-md-4 col-sm-6 col-xs-12 masonry-item">
+				<figure class="img-hover">
+					<img src="{{ asset('taverne/img/gallery/3.jpg') }}" alt="">
+					<figcaption>
+						<h2>Guar<span>dians</span></h2>
+						<p>Sadie never took her eyes.</p>
+						<a href="{{ asset('taverne/img/gallery/lg-3.jpg') }}" data-footer="Guardians of the Galaxy" data-toggle="lightbox" data-gallery="multiimages"></a>
+					</figcaption>		
+				</figure>
+			</div>
+
+			<div id="edition2" class="col-lg-3 col-md-4 col-sm-6 col-xs-12 masonry-item">
+				<figure class="img-hover">
+					<img src="{{ asset('taverne/img/gallery/4.jpg') }}" alt="">
+					<figcaption>
+						<h2>GTA <span>5</span></h2>
+						<p>Sadie never took her eyes.</p>
+						<a href="{{ asset('taverne/img/gallery/lg-4.jpg') }}" data-footer="Grand Theft Auto 5" data-toggle="lightbox" data-gallery="multiimages"></a>
+					</figcaption>		
+				</figure>
+			</div>
+
+			<div id="edition2" class="col-lg-3 col-md-4 col-sm-6 col-xs-12 masonry-item">
+				<figure class="img-hover">
+					<img src="{{ asset('taverne/img/gallery/5.jpg') }}" alt="">
+					<figcaption>
+						<h2>Uncharted <span>4</span></h2>
+						<p>Sadie never took her eyes.</p>
+						<a href="{{ asset('taverne/img/gallery/lg-5.jpg') }}" data-footer="Uncharted 4" data-toggle="lightbox" data-gallery="multiimages"></a>
+					</figcaption>			
+				</figure>
+			</div>
+			
+			<div id="edition2" class="col-lg-3 col-md-4 col-sm-6 col-xs-12 masonry-item">
+				<figure class="img-hover">
+					<img src="{{ asset('taverne/img/gallery/6.jpg') }}" alt="">
+					<figcaption>
+						<h2>Vice <span>City</span></h2>
+						<p>Sadie never took her eyes.</p>
+						<a href="{{ asset('taverne/img/gallery/lg-6.jpg') }}" data-footer="Vice City" data-toggle="lightbox" data-gallery="multiimages"></a>
+					</figcaption>			
+				</figure>
+			</div>
+
+			<div id="edition1" class="col-lg-3 col-md-4 col-sm-6 col-xs-12 masonry-item">
+				<figure class="img-hover">
+					<img src="{{ asset('taverne/img/gallery/7.jpg') }}" alt="">
+					<figcaption>
+						<h2>Max <span>Payne</span></h2>
+						<p>Sadie never took her eyes.</p>
+						<a href="{{ asset('taverne/img/gallery/lg-7.jpg') }}" data-footer="Max Payne" data-toggle="lightbox" data-gallery="multiimages"></a>
+					</figcaption>			
+				</figure>
+			</div>
+
+			<div id="edition1" class="col-lg-3 col-md-4 col-sm-6 col-xs-12 masonry-item">
+				<figure class="img-hover">
+					<img src="{{ asset('taverne/img/gallery/8.jpg') }}" alt="">
+					<figcaption>
+						<h2>Witcher <span>3</span></h2>
+						<p>Sadie never took her eyes.</p>
+						<a href="{{ asset('taverne/img/gallery/lg-8.jpg') }}" data-footer="Witcher 3" data-toggle="lightbox" data-gallery="multiimages"></a>
+					</figcaption>			
+				</figure>
+			</div>
+		</div>
+	</div>
+</section>
+{% endblock %}
+
+{% block script %}
+<script src="{{ asset('taverne/plugins/ekko-lightbox/ekko-lightbox.min.js') }}"></script>
+<script src="{{ asset('taverne/plugins/masonry/imagesloaded.pkgd.min.js') }}"></script>
+<script src="{{ asset('taverne/plugins/masonry/masonry.pkgd.min.js') }}"></script>
+<script>
+(function($) {
+"use strict";
+	// Masonry
+	var $container = $('.masonry');
+	$($container).imagesLoaded( function(){
+		$($container).masonry({
+			itemSelector: '.masonry-item', 
+			columnWidth: '.masonry-item'
+		});
+	});
+		
+	// Lightbox
+	$(document).delegate('*[data-toggle="lightbox"]', 'click', function(event) { 
+		event.preventDefault(); 
+		$(this).ekkoLightbox();
+	}); 
+
+	// Filter
+	var $filter = $('.filter a').click(function(e) {
+		e.preventDefault();
+		var id = $(this).attr("href");
+		if (id == '#all') {
+			$('.masonry-item').removeClass('faded');
+		} else {
+			var $el = $(id).removeClass('faded');
+			$('.masonry-item').not($el).addClass('faded');
+		}
+		$filter.removeClass('active');
+		$(this).addClass('active');
+	});
+})(jQuery);
+</script>
+{% endblock %}

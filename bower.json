@@ -1,0 +1,26 @@
+{
+  "name": "bower",
+  "authors": [
+    "targalis"
+  ],
+  "description": "",
+  "main": "",
+  "moduleType": [],
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests",
+    "web/bower"
+  ],
+  "dependencies": {
+    "jquery": "^2.2.2",
+    "bootstrap": "^3.3.6",
+    "jquery-ui": "^1.12.1",
+    "handlebars": "^4.0.10",
+    "rivets": "^0.9.6"
+  }
+}

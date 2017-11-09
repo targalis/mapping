@@ -1,0 +1,462 @@
+{% extends "layout.html.twig" %}
+
+{% block content %}
+{#
+<section class="border-bottom-1 border-grey-200 padding-top-15 padding-bottom-10">
+	<div class="owl-carousel owl-video">
+		<div class="card card-video">
+			<div class="card-img">
+				<a href="videos-single.html"><img src="http://i1.ytimg.com/vi/RZ5EPBx0G7Y/mqdefault.jpg" alt=""></a>
+				<div class="time">15:42</div>
+			</div>
+		</div>
+		<div class="card card-video">
+			<div class="card-img">
+				<a href="videos-single.html"><img src="http://i1.ytimg.com/vi/yjqqwZGNHPg/mqdefault.jpg" alt=""></a>
+				<div class="time">13:52</div>
+			</div>
+		</div>
+		<div class="card card-video">
+			<div class="card-img">
+				<a href="videos-single.html"><img src="http://i1.ytimg.com/vi/zLx09vjKYlA/mqdefault.jpg" alt=""></a>
+				<div class="time">08:03</div>
+			</div>
+		</div>
+		<div class="card card-video">
+			<div class="card-img">
+				<a href="videos-single.html"><img src="http://i1.ytimg.com/vi/6vxWoyIjuJA/mqdefault.jpg" alt=""></a>
+				<div class="time">11:15</div>
+			</div>
+		</div>
+		<div class="card card-video">
+			<div class="card-img">
+				<a href="videos-single.html"><img src="http://i1.ytimg.com/vi/g7d9KM1plyg/mqdefault.jpg" alt=""></a>
+				<div class="time">16:20</div>
+			</div>
+		</div>
+		<div class="card card-video">
+			<div class="card-img">
+				<a href="videos-single.html"><img src="http://i1.ytimg.com/vi/jhv3Jq6O-nw/mqdefault.jpg" alt=""></a>
+				<div class="time">05:31</div>
+			</div>
+		</div>
+		<div class="card card-video">
+			<div class="card-img">
+				<a href="videos-single.html"><img src="http://i1.ytimg.com/vi/IsDX_LiJT7E/mqdefault.jpg" alt=""></a>
+				<div class="time">04:55</div>
+			</div>
+		</div>
+		<div class="card card-video">
+			<div class="card-img">
+				<a href="videos-single.html"><img src="http://i1.ytimg.com/vi/SMp-b_hWj14/mqdefault.jpg" alt=""></a>
+				<div class="time">14:17</div>
+			</div>
+		</div>
+	</div>
+</section>
+#}
+
+<section class="bg-grey-50">	
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
+				<div class="headline">
+					<h4>Recent Posts</h4>
+					<div class="btn-group pull-right">
+						<a href="#" class="btn btn-default"><i class="fa fa-th-large"></i></a>
+						<a href="#" class="btn btn-default"><i class="fa fa-bars"></i></a>
+					</div>
+				</div>
+				<div class="panel panel-default panel-post">
+					<div class="panel-body">
+						<div class="post">
+							<div class="post-header post-author">
+								<a href="#" class="author" data-toggle="tooltip" title="YAKUZI"><img src="{{ asset('taverne/img/user/avatar.jpg') }}" alt=""></a>
+								<div class="post-title">
+									<h3><a href="{{ path('videogame_games_single') }}">Deadpool Gets the Movie He Deserves</a></h3>
+									<ul class="post-meta">
+										<li><a href="#"><i class="fa fa-user"></i> YAKUZI</a></li>
+										<li><i class="fa fa-calendar-o"></i> April 13, 2016</li>
+										<li><a href="#"><i class="fa fa-comments"></i> 0 <span class="hidden-xs">Comments</span></a></li>
+									</ul>
+								</div>
+							</div>
+							<div id="post-carousel" class="carousel slide post-thumbnail" data-ride="carousel">
+								<ol class="carousel-indicators">
+									<li data-target="#post-carousel" data-slide-to="0" class="active"></li>
+									<li data-target="#post-carousel" data-slide-to="1"></li>
+								</ol>
+								<div class="carousel-inner">
+									<div class="item active">
+										<img src="{{ asset('taverne/img/blog/lg/1.jpg') }}" alt="">
+										<div class="post-caption">Example of post thumbnail caption</div>
+									</div>
+									<div class="item">
+										<img src="{{ asset('taverne/img/blog/lg/2.jpg') }}" alt="">
+										<div class="post-caption">Example of post thumbnail caption</div>
+									</div>
+								</div>
+							</div>
+							Etiam et sollicitudin elit. Sed ultrices aliquet dui, eu aliquet metus sodales sit amet. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Duis porttitor varius pulvinar. Vivamus efficitur vulputate imperdiet.
+						</div>
+					</div>
+					<div class="panel-footer">
+						<ul class="post-action">
+							<li><a href="#"><i class="fa fa-heart"></i> like (5)</a></li>
+							<li><a href="#"><i class="fa fa-comments"></i> Comments</a></li>
+							<li><a href="#"><i class="fa fa-reply"></i> share</a></li>
+						</ul>
+					</div>
+				</div>
+				
+				<div class="panel panel-default panel-post">
+					<div class="panel-body">
+						<div class="post">
+							<div class="post-header post-author">
+								<a href="#" class="author" data-toggle="tooltip" title="YAKUZI"><img src="{{ asset('taverne/img/user/avatar2.jpg') }}" alt=""></a>
+								<div class="post-title">
+									<h3><a href="{{ path('videogame_news_single') }}">The Witcher 3 is Game of the Year</a></h3>
+									<ul class="post-meta">
+										<li><a href="#"><i class="fa fa-user"></i> YAKUZI</a></li>
+										<li><i class="fa fa-calendar-o"></i> April 13, 2016</li>
+										<li><a href="#"><i class="fa fa-comments"></i> 0 <span class="hidden-xs">Comments</span></a></li>
+									</ul>
+								</div>
+							</div>
+							<div class="post-thumbnail">
+								<a href="blog-post.html"><img src="{{ asset('taverne/img/blog/lg/3.jpg') }}" alt=""></a>
+								<div class="post-caption">Example of post thumbnail caption</div>
+							</div>
+							Etiam et sollicitudin elit. Sed ultrices aliquet dui, eu aliquet metus sodales sit amet. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Duis porttitor varius pulvinar. Vivamus efficitur vulputate imperdiet.
+						</div>
+					</div>
+					<div class="panel-footer">
+						<ul class="post-action">
+							<li><a href="#"><i class="fa fa-heart"></i> like (5)</a></li>
+							<li><a href="#"><i class="fa fa-comments"></i> Comments</a></li>
+							<li><a href="#"><i class="fa fa-reply"></i> share</a></li>
+						</ul>
+					</div>
+				</div>
+				
+				<div class="panel panel-default panel-post">
+					<div class="panel-body">
+						<div class="post">
+							<div class="post-header post-author">
+								<a href="#" class="author" data-toggle="tooltip" title="YAKUZI"><img src="{{ asset('taverne/img/user/avatar3.jpg') }}" alt=""></a>
+								<div class="post-title">
+									<h3><a href="{{ path('video') }}">Official Mirror’s Edge Catalyst Trailer</a></h3>
+									<ul class="post-meta">
+										<li><a href="#"><i class="fa fa-user"></i> YAKUZI</a></li>
+										<li><i class="fa fa-calendar-o"></i> April 13, 2016</li>
+										<li><a href="#"><i class="fa fa-comments"></i> 0 <span class="hidden-xs">Comments</span></a></li>
+									</ul>
+								</div>
+							</div>
+							
+							<div class="post-thumbnail">
+								<div class="embed-responsive embed-responsive-16by9">
+									<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/IsDX_LiJT7E?rel=0&amp;showinfo=0" allowfullscreen></iframe>
+								</div>
+							</div>
+							
+							Etiam et sollicitudin elit. Sed ultrices aliquet dui, eu aliquet metus sodales sit amet. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Duis porttitor varius pulvinar. Vivamus efficitur vulputate imperdiet.
+						</div>
+					</div>
+					<div class="panel-footer">
+						<ul class="post-action">
+							<li><a href="#"><i class="fa fa-heart"></i> like (5)</a></li>
+							<li><a href="#"><i class="fa fa-comments"></i> Comments</a></li>
+							<li><a href="#"><i class="fa fa-reply"></i> share</a></li>
+						</ul>
+					</div>
+				</div>
+				
+				<div class="panel panel-default panel-post">
+					<div class="panel-body">
+						<div class="post">
+							<div class="post-header post-author">
+								<a href="#" class="author" data-toggle="tooltip" title="YAKUZI"><img src="{{ asset('taverne/img/user/avatar4.jpg') }}" alt=""></a>
+								<div class="post-title">
+									<h3><a href="{{ path('videogame_games_single') }}">Batman V Superman Dawn Of Justice Soundtrack</a></h3>
+									<ul class="post-meta">
+										<li><a href="#"><i class="fa fa-user"></i> YAKUZI</a></li>
+										<li><i class="fa fa-calendar-o"></i> April 13, 2016</li>
+										<li><a href="#"><i class="fa fa-comments"></i> 0 <span class="hidden-xs">Comments</span></a></li>
+									</ul>
+								</div>
+							</div>
+							<div class="post-thumbnail">
+								<iframe src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/236306876&amp;auto-play=false&amp;hide-related=false&amp;show-comments=true&amp;show-user=true&amp;show-reposts=false&amp;visual=true"></iframe>	
+							</div>
+							Etiam et sollicitudin elit. Sed ultrices aliquet dui, eu aliquet metus sodales sit amet. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Duis porttitor varius pulvinar. Vivamus efficitur vulputate imperdiet.
+						</div>
+					</div>
+					<div class="panel-footer">
+						<ul class="post-action">
+							<li><a href="#"><i class="fa fa-heart"></i> like (5)</a></li>
+							<li><a href="#"><i class="fa fa-comments"></i> Comments</a></li>
+							<li><a href="#"><i class="fa fa-reply"></i> share</a></li>
+						</ul>
+					</div>
+				</div>
+				
+				<div class="text-center"><a href="#" class="btn btn-primary btn-lg btn-shadow btn-rounded btn-icon-right">Load More <i class="fa fa-angle-down"></i></a></div>
+			</div>
+			
+			<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+				<div class="widget widget-list">
+					<div class="panel panel-default">
+						<div class="panel-heading bold">Recent Posts</div>
+						<div class="panel-body">
+							<ul>
+								<li>
+									<a href="#" class="thumb"><img src="{{ asset('taverne/img/blog/xs/1.jpg') }}" alt=""></a>
+									<div class="widget-list-meta">
+										<h4 class="widget-list-title"><a href="#">Overwatch Closed Beta</a></h4>
+										<p><i class="fa fa-clock-o"></i> September 15, 2016</p>
+									</div>
+								</li>
+								<li>
+									<a href="#" class="thumb"><img src="{{ asset('taverne/img/blog/xs/2.jpg') }}" alt=""></a>
+									<div class="widget-list-meta">
+										<h4 class="widget-list-title"><a href="#">Blood and Gore</a></h4>
+										<p><i class="fa fa-clock-o"></i> September 13, 2016</p>
+									</div>
+								</li>
+								<li>
+									<a href="#" class="thumb"><img src="{{ asset('taverne/img/blog/xs/3.jpg') }}" alt=""></a>
+									<div class="widget-list-meta">
+										<h4 class="widget-list-title"><a href="#">Warner Bros. Interactive</a></h4>
+										<p><i class="fa fa-clock-o"></i> September 12, 2016</p>
+									</div>
+								</li>
+								<li>
+									<a href="#" class="thumb"><img src="{{ asset('taverne/img/blog/xs/4.jpg') }}" alt=""></a>
+									<div class="widget-list-meta">
+										<h4 class="widget-list-title"><a href="#">Sharks Don't Sleep</a></h4>
+										<p><i class="fa fa-clock-o"></i> September 11, 2016</p>
+									</div>
+								</li>
+								<li>
+									<a href="#" class="thumb"><img src="{{ asset('taverne/img/blog/xs/5.jpg') }}" alt=""></a>
+									<div class="widget-list-meta">
+										<h4 class="widget-list-title"><a href="#">GTA 5 Reaches 5 Million</a></h4>
+										<p><i class="fa fa-clock-o"></i> September 10, 2016</p>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				
+				<div class="widget">
+					<div id="twitter" data-twitter="346548853320851456"></div>
+				</div>
+				
+				<div class="widget">
+					<div class="embed-responsive embed-responsive-16by9">
+						<iframe class="embed-responsive-item" src="http://www.youtube.com/embed/IsDX_LiJT7E?rel=0&amp;showinfo=0" allowfullscreen></iframe>
+					</div>
+				</div>
+				
+				<div class="widget widget-list">
+					<div class="panel panel-default">
+						<div class="panel-heading bold">Recent Comments</div>
+						<div class="panel-body">
+							<ul>
+								<li>
+									<a href="#" class="thumb"><img src="{{ asset('taverne/img/blog/xs/1.jpg') }}" alt=""></a>
+									<div class="widget-list-meta">
+										<h4 class="widget-list-title"><a href="#">Overwatch Closed Beta</a></h4>
+										<p><i class="fa fa-clock-o"></i> September 15, 2016</p>
+									</div>
+								</li>
+								<li>
+									<a href="#" class="thumb"><img src="{{ asset('taverne/img/blog/xs/2.jpg') }}" alt=""></a>
+									<div class="widget-list-meta">
+										<h4 class="widget-list-title"><a href="#">Blood and Gore</a></h4>
+										<p><i class="fa fa-clock-o"></i> September 13, 2016</p>
+									</div>
+								</li>
+								<li>
+									<a href="#" class="thumb"><img src="{{ asset('taverne/img/blog/xs/3.jpg') }}" alt=""></a>
+									<div class="widget-list-meta">
+										<h4 class="widget-list-title"><a href="#">Warner Bros. Interactive</a></h4>
+										<p><i class="fa fa-clock-o"></i> September 12, 2016</p>
+									</div>
+								</li>
+								<li>
+									<a href="#" class="thumb"><img src="{{ asset('taverne/img/blog/xs/4.jpg') }}" alt=""></a>
+									<div class="widget-list-meta">
+										<h4 class="widget-list-title"><a href="#">Sharks Don't Sleep</a></h4>
+										<p><i class="fa fa-clock-o"></i> September 11, 2016</p>
+									</div>
+								</li>
+								<li>
+									<a href="#" class="thumb"><img src="{{ asset('taverne/img/blog/xs/5.jpg') }}" alt=""></a>
+									<div class="widget-list-meta">
+										<h4 class="widget-list-title"><a href="#">GTA 5 Reaches 5 Million</a></h4>
+										<p><i class="fa fa-clock-o"></i> September 10, 2016</p>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				
+				<div class="widget">
+					<div class="widget-row">
+						<div id="fb-root"></div>
+						<script>(function(d, s, id) {
+						  var js, fjs = d.getElementsByTagName(s)[0];
+						  if (d.getElementById(id)) return;
+						  js = d.createElement(s); js.id = id;
+						  js.src = "http://connect.facebook.net/fr-FR/sdk.js#xfbml=1&version=v2.5";
+						  fjs.parentNode.insertBefore(js, fjs);
+						}(document, 'script', 'facebook-jssdk'));</script>
+						<div class="fb-page" data-href="https://www.facebook.com/yakuzi.eu" data-height="800" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true" data-show-posts="false"><div class="fb-xfbml-parse-ignore"><blockquote cite="https://www.facebook.com/yakuzi.eu"><a href="https://www.facebook.com/yakuzi.eu">yakuzi.eu</a></blockquote></div></div>
+					</div>
+				</div>
+				
+				<div class="widget">
+					<div class="panel panel-default">
+						<div class="panel-heading bold">Recommended Videos</div>
+						<div class="panel-body">
+							<div class="card card-video">
+								<div class="card-img">
+									<a href="videos-single.html"><img src="http://i1.ytimg.com/vi/jhv3Jq6O-nw/mqdefault.jpg" alt=""></a>
+									<div class="time">04:51</div>
+								</div>
+								<div class="caption">
+									<h3 class="card-title"><a href="videos-single.html">Call of Duty Black Ops 3</a></h3>
+									<ul>
+										<li><i class="fa fa-clock-o"></i> April 13, 2016</li>
+										<li><i class="fa fa-eye"></i> 1500 views</li>
+									</ul>
+								</div>
+							</div>
+							<div class="card card-video">
+								<div class="card-img">
+									<a href="videos-single.html"><img src="http://i1.ytimg.com/vi/6vxWoyIjuJA/mqdefault.jpg" alt=""></a>
+									<div class="time">06:33</div>
+								</div>
+								<div class="caption">
+									<h3 class="card-title"><a href="videos-single.html">The Witcher 3: Wild Hunt</a></h3>
+									<ul>
+										<li><i class="fa fa-clock-o"></i> April 13, 2016</li>
+										<li><i class="fa fa-eye"></i> 1500 views</li>
+									</ul>
+								</div>
+							</div>
+							<div class="card card-video">
+								<div class="card-img">
+									<a href="videos-single.html"><img src="http://i1.ytimg.com/vi/g7d9KM1plyg/mqdefault.jpg" alt=""></a>
+									<div class="time">06:33</div>
+								</div>
+								<div class="caption">
+									<h3 class="card-title"><a href="videos-single.html">The Witcher 3: Wild Hunt</a></h3>
+									<ul>
+										<li><i class="fa fa-clock-o"></i> April 13, 2016</li>
+										<li><i class="fa fa-eye"></i> 1500 views</li>
+									</ul>
+								</div>
+							</div>
+							<a href="#" class="btn btn-inverse btn-block">More Videos</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section class="border-top-1 border-grey-200 padding-top-20">
+	<div class="container">
+		<div class="headline">
+			<h4>Recommended Posts</h4>
+		</div>
+		<div class="row">
+			<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 margin-bottom-sm-30">
+				<div class="card card-post">
+					<div class="card-img">
+						<img src="{{ asset('taverne/img/blog/md/4.jpg') }}" alt="">
+						<div class="meta"><a href="games-single.html"><i class="fa fa-heart-o"></i> <span>15</span></a></div>
+					</div>
+					<div class="caption">
+						<h3 class="card-title"><a href="games-single.html">Grand Theft Auto 5</a></h3>
+						<ul>
+							<li><i class="fa fa-clock-o"></i> April 14, 2016</li>
+							<li><i class="fa fa-eye"></i> 1230 views</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+							
+			<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 margin-bottom-sm-30">
+				<div class="card card-post">
+					<div class="card-img">
+						<img src="{{ asset('taverne/img/blog/md/3.jpg') }}" alt="">
+						<div class="meta"><a href="games-single.html"><i class="fa fa-heart-o"></i> <span>6</span></a></div>
+					</div>
+					<div class="caption">
+						<h3 class="card-title"><a href="games-single.html">Witcher 3 Limited Edition</a></h3>
+						<ul>
+							<li><i class="fa fa-clock-o"></i> April 12, 2016</li>
+							<li><i class="fa fa-eye"></i> 570 views</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+							
+			<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 margin-bottom-sm-30">
+				<div class="card card-post">
+					<div class="card-img">
+						<img src="{{ asset('taverne/img/blog/md/5.jpg') }}" alt="">
+						<div class="meta"><a href="games-single.html"><i class="fa fa-heart-o"></i> <span>12</span></a></div>
+					</div>
+					<div class="caption">
+						<h3 class="card-title"><a href="games-single.html">Deadpool the movie</a></h3>
+						<ul>
+							<li><i class="fa fa-clock-o"></i> April 10, 2016</li>
+							<li><i class="fa fa-eye"></i> 780 views</li>
+						</ul>
+					</div>
+				</div>
+			</div>	
+							
+			<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 margin-bottom-sm-30">
+				<div class="card card-post">
+					<div class="card-img">
+						<img src="{{ asset('taverne/img/blog/md/6.jpg') }}" alt="">
+						<div class="meta"><a href="games-single.html"><i class="fa fa-heart-o"></i> <span>12</span></a></div>
+					</div>
+					<div class="caption">
+						<h3 class="card-title"><a href="games-single.html">Call of duty</a></h3>
+						<ul>
+							<li><i class="fa fa-clock-o"></i> April 08, 2016</li>
+							<li><i class="fa fa-eye"></i> 1430 views</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+{% endblock %}
+
+{% block script %}
+<script>
+(function($) {
+	"use strict";
+	
+	$(".owl-carousel").owlCarousel({
+		autoPlay: true,
+		items : 6, //4 items above 1000px browser width
+		itemsDesktop : [1600,3], //3 items between 1000px and 0
+		itemsTablet: [940,1], //1 items between 600 and 0
+		itemsMobile : false // itemsMobile disabled - inherit from itemsTablet option
+	});
+})(jQuery);
+</script>
+{% endblock %}

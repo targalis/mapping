@@ -1,0 +1,9 @@
+debug: true
+application: silex bone
+
+database:
+  driver: mysql
+  host: localhost
+  user: root
+  password:
+  name: kanban

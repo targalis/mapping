@@ -1,0 +1,5 @@
+/mvc/config/cache/
+/mvc/config/logs/
+/vendor/
+/web/bower
+composer.lock

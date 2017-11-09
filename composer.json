@@ -1,0 +1,16 @@
+{
+    "require": {
+        "silex/silex": "~2.0",
+		"symfony/twig-bridge": "*",
+        "symfony/asset": "^3.3",
+        "symfony/yaml": "^3.3",
+		"symfony/translation": "*",
+		"dflydev/doctrine-orm-service-provider": "^2.0",
+        "phpoffice/phpexcel": "^1.8"
+    },
+	"autoload": {
+        "psr-4": {
+            "": "mvc/src/"
+        }
+    }
+}
